@@ -1,0 +1,29 @@
+/* tablet  */
+
+@media screen and (max-width:960px) {
+    nav {
+       flex-direction: column; 
+       gap: 20px;
+    }
+}
+
+/* mobile device  */
+
+@media screen and (max-width:576px) {
+    html {
+        font-size: 3.5vw;
+    }
+    nav {
+        flex-direction: row; 
+        gap: 0px;
+     }
+     .nav-title {
+        padding-right: 5px;
+     }
+    .hamburger-menu {
+        display: block;
+    }
+    .nav-item {
+        display: none;
+    }
+}

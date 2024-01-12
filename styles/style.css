@@ -16,7 +16,7 @@ body {
 /* common styles  */
 
 .container {
-  width: 75%;
+  width: 80%;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -45,7 +45,7 @@ img {
 
 header {
   background-color: rgba(255, 144, 14, 0.1);
-  padding: 50px 0;
+  padding: 3.125rem 0;
 }
 
 nav {
@@ -74,6 +74,43 @@ nav ul li a {
   text-decoration: none;
 }
 
+/* hamburger menu  */
+
+.hamburger-menu {
+    display: none;
+}
+
+.hamburger-icon {
+    width: 3.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.ham-menu-item {
+    display: none;
+    position: absolute;
+    list-style: none;
+    background-color: rgb(255, 244, 232);
+    box-shadow: 0 0 30px 10px rgba(143, 143, 143, 0.247);
+    padding: 20px 0;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.ham-menu-item li {
+    color: #424242;
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+
+.ham-menu-item li:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.hamburger-menu:hover .ham-menu-item {
+    display: block;
+}
+
 /* banner styles  */
 
 .banner {
@@ -82,7 +119,7 @@ nav ul li a {
 
 .banner-content {
   text-align: center;
-  max-width: 651px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -95,7 +132,7 @@ nav ul li a {
 
 .banner-desc {
   color: #727272;
-  line-height: 26px;
+  line-height: 26px; 
 }
 
 .banner-content button {

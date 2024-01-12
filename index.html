@@ -5,12 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>G3 Architects</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
   </head>
   <body>
     <header>
       <nav class="container">
         <h3 class="nav-title">G3 Architects</h3>
-        <ul>
+        <!-- hamburger menu for small devices -->
+        <div class="hamburger-menu">
+            <div class="hamburger-icon">
+                <img src="images/icons/hamburger.svg" alt="">
+            </div>
+            <ul class="ham-menu-item">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Login</a></li>
+              </ul>
+        </div>
+        <ul class="nav-item">
           <li><a href="">Home</a></li>
           <li><a href="">About</a></li>
           <li><a href="">Contact</a></li>
@@ -28,7 +41,7 @@
           <button class="primary-btn">Explore More</button>
         </div>
         <div class="banner-img">
-            <img src="images/banner.png" alt="Banner Image">
+          <img src="images/banner.png" alt="Banner Image" />
         </div>
       </div>
     </header>
