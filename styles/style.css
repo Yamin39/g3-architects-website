@@ -25,6 +25,17 @@ img {
   width: 100%;
 }
 
+.section-title {
+  color: #131313;
+  font-size: 2.8125rem;
+  font-weight: 700;
+}
+
+.section-desc {
+  color: #727272;
+  line-height: 26px;
+}
+
 .primary-btn {
   color: #fff;
   background: #ff900e;
@@ -38,7 +49,7 @@ img {
 }
 
 .primary-btn:hover {
-    background-color: #d97b10;
+  background-color: #d97b10;
 }
 
 /* header styles */
@@ -77,38 +88,37 @@ nav ul li a {
 /* hamburger menu  */
 
 .hamburger-menu {
-    display: none;
+  display: none;
 }
 
 .hamburger-icon {
-    width: 3.75rem;
-    display: flex;
-    align-items: center;
+  width: 3.75rem;
+  display: flex;
+  align-items: center;
 }
 
 .ham-menu-item {
-    display: none;
-    position: absolute;
-    list-style: none;
-    background-color: rgb(255, 244, 232);
-    box-shadow: 0 0 30px 10px rgba(143, 143, 143, 0.247);
-    padding: 20px 0;
-    margin-top: 15px;
-    margin-right: 20px;
+  display: none;
+  position: absolute;
+  right: 5vw;
+  list-style: none;
+  background-color: rgb(255, 244, 232);
+  box-shadow: 0 0 30px 10px rgba(143, 143, 143, 0.247);
+  padding: 1.25rem 0;
 }
 
 .ham-menu-item li {
-    color: #424242;
-    margin-bottom: 10px;
-    padding: 0 20px;
+  color: #424242;
+  margin-bottom: 0.625rem;
+  padding: 0 1.25rem;
 }
 
 .ham-menu-item li:hover {
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 .hamburger-menu:hover .ham-menu-item {
-    display: block;
+  display: block;
 }
 
 /* banner styles  */
@@ -130,11 +140,43 @@ nav ul li a {
   margin-bottom: 15px;
 }
 
-.banner-desc {
-  color: #727272;
-  line-height: 26px; 
-}
-
 .banner-content button {
   margin: 33px 0 50px;
+}
+
+/* main */
+
+.container {
+  padding: 5.3125rem 0;
+}
+
+/* teams section styles start */
+
+.teams {
+  display: flex;
+  gap: 4.75rem;
+  align-items: center;
+}
+
+.teams-img-container, .teams-content {
+    width: 50%;
+}
+
+.teams-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.teams-content {
+    padding-right: 3.75rem;
+}
+
+.teams .teams-content h3 span:nth-child(1) {
+    color: #727272;
+    font-weight: 500;
+}
+
+.teams .teams-content p {
+    margin: 1.5rem 0 2rem;
 }
