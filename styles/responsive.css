@@ -1,29 +1,69 @@
 /* tablet  */
 
-@media screen and (max-width:960px) {
-    nav {
-       flex-direction: column; 
-       gap: 20px;
-    }
+@media screen and (max-width: 960px) {
+  nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .teams {
+    flex-direction: column-reverse;
+  }
+  .teams-img-container,
+  .teams-content,
+  .features-left,
+  .features-right {
+    width: 100%;
+  }
+  .teams-content {
+    text-align: center;
+    padding: 0;
+  }
+
+  .features {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+
+  .facts {
+    padding-top: 0;
+  }
+
+  .facts .fact-head {
+    width: auto;
+  }
 }
 
 /* mobile device  */
 
-@media screen and (max-width:576px) {
-    html {
-        font-size: 3.5vw;
-    }
-    nav {
-        flex-direction: row; 
-        gap: 0px;
-     }
-     .nav-title {
-        padding-right: 5px;
-     }
-    .hamburger-menu {
-        display: block;
-    }
-    .nav-item {
-        display: none;
-    }
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 3.5vw;
+  }
+  nav {
+    flex-direction: row;
+    gap: 0px;
+  }
+  .nav-title {
+    padding-right: 5px;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  .nav-item {
+    display: none;
+  }
+
+  .features-right .features-img {
+    padding-left: 0;
+  }
+
+  .features-right .experience {
+    top: -9.375rem;
+    margin: 0 auto;
+  }
+
+ footer {
+    padding: 8rem 0 10rem;
+  }
 }
